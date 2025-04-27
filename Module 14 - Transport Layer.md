@@ -57,8 +57,8 @@ ___UPD___
 	- __Support flow control__ 
 - ___Header___
 	- Segment = 20 bytes(160 bits)
-	![[Segment Header.png]]
-	![[Výstřižek.png]]
+	[Segment Header.png]
+	[Výstřižek.png]
 ## ___UPD protocol___
 - ___Features___
 	-  Data is reconstructed in the order that it is received.
