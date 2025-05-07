@@ -18,10 +18,10 @@
 	- __Connection-oriented protocol__
 	- ___Reliability and Flow control___
 		- Number and track data segments transmitted to a _specific host_ and _application_.
-		 Acknowledge received data
-		 Retransmit any unacknowledged data after a certain amount of time
-		 Sequence data that might arrive in wrong order
-		 Send data at an efficient rate that is acceptable by the receiver
+		- Acknowledge received data
+		- Retransmit any unacknowledged data after a certain amount of time
+		- Sequence data that might arrive in wrong order
+		- Send data at an efficient rate that is acceptable by the receiver
 	>__Note:__ TCP segmentating data
 	- __Three-way hand shake__
 		- 
