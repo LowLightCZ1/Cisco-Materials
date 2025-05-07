@@ -22,7 +22,7 @@
 		 Retransmit any unacknowledged data after a certain amount of time
 		 Sequence data that might arrive in wrong order
 		 Send data at an efficient rate that is acceptable by the receiver
-	- __Note:__ TCP segmentating data
+	>__Note:__ TCP segmentating data
 	- __Three-way hand shake__
 		- 
 
