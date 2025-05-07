@@ -23,8 +23,7 @@
 		- Sequence data that might arrive in wrong order
 		- Send data at an efficient rate that is acceptable by the receiver
 	>__Note:__ TCP segmentating data
-	- __Three-way hand shake__
-		- 
+	__Three-way hand shake__
 
 ___UPD___
 - Connectionless, stateless protocol
