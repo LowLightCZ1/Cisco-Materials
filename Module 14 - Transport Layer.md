@@ -74,6 +74,6 @@ ___UPD___
 	- __socket__ - Combination of _IP address and port address_
 	- two sockets combine to form a _socket pair_: 192.168.1.5:1099, 192.168.1.7:80
 - ___Groups__
-	 ![[Ports.png]]
+	 ![Ports.png]
 	- __Well-known ports:__
 	![[well-known.png]]
