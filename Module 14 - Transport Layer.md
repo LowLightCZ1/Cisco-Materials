@@ -18,12 +18,13 @@
 	- __Connection-oriented protocol__
 	- ___Reliability and Flow control___
 		- Number and track data segments transmitted to a _specific host_ and _application_.
-		- Acknowledge received data
-		- Retransmit any unacknowledged data after a certain amount of time
-		- Sequence data that might arrive in wrong order
-		- Send data at an efficient rate that is acceptable by the receiver
-	>__Note:__ TCP segmentating data
+		 Acknowledge received data
+		 Retransmit any unacknowledged data after a certain amount of time
+		 Sequence data that might arrive in wrong order
+		 Send data at an efficient rate that is acceptable by the receiver
+	- __Note:__ TCP segmentating data
 	- __Three-way hand shake__
+		- 
 
 ___UPD___
 - Connectionless, stateless protocol
@@ -56,8 +57,21 @@ ___UPD___
 	- __Support flow control__ 
 - ___Header___
 	- Segment = 20 bytes(160 bits)
-	[Segment Header.png]
-	[Výstřižek.png]
+	![[Segment Header.png]]
+	![[Výstřižek.png]]
+### __Features of TCP__
+- ___Reliability___
+	1. __Guaranteed and Ordered Delivery__
+		- Sequence num. - first byte in segment
+		- __ISN__(initial sequence number) - starting value of send byte.
+		- _Expectational Acknowledgement_ 
+	2. __Data Loss and Retransmission__
+		- __SACK__(selective acknowledgement) - can acknowledge which segments were sends and resend only those which is needed.
+- ___Flow Control__
+	1. __Window Size and Acknowledgments__
+		- __MSS__ - largest amount of data, that can device receive in one segment.
+		- __MTU__ - Ethernet interface: 1500 bytes
+	2. __
 ## ___UPD protocol___
 - ___Features___
 	-  Data is reconstructed in the order that it is received.
@@ -73,6 +87,6 @@ ___UPD___
 	- __socket__ - Combination of _IP address and port address_
 	- two sockets combine to form a _socket pair_: 192.168.1.5:1099, 192.168.1.7:80
 - ___Groups__
-	 ![Ports.png]
+	 ![[Ports.png]]
 	- __Well-known ports:__
 	![[well-known.png]]
