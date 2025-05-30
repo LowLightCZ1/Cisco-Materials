@@ -1,0 +1,86 @@
+## ___Threats and Vulnerabilities___
+- __Threats actors__ - intruders who gain access by doing something that is not authorized.
+- ___Types of Threats___
+	- __Information theft__ - obtain confidential information.
+	- __Data loss and manipulation__ - Destroy and alter data.
+	- __Identity theft__ - form of information theft, stealing someone identity
+	-  __Disruption of Service__ - preventing legitimate user from accessing entitled ervices.
+- ___Types of Vulnerabilities___
+	- __Technological__
+		- HTTP, FTP, SNMP
+		- Operating system 
+		- Network Equipment
+	- __Configuration__
+		- Unsecured user accounts
+		- System accounts with weak password
+		- Misconfigured internet services, network equipment
+	- __Policy__
+		- Politics
+		- Lack of written security policy
+		- etc.
+- ___Physical security___
+	- Hardware - Physical damage
+	- Environmental - temperature extremes, humidity extremes
+	- Electrical 
+	- Maintenance - poor labeling, lack of critical spare parts, etc.
+
+## ___Network Attacks___
+- ___Types of Malware
+	- __Viruses__ - Insert a copy of itself into another program(and become part of it), Dos attack
+	- __Worms__ - similar to viruses but worms are standalone software, 
+	- __Trojan horses__ - "Legitime-looking" software, create back doors
+- ___Types of Attacks___
+	- __Reconnaissance__ - Discovery and mapping system, service or vulnerabilities
+		- Internet Queries
+		- Ping Sweeps
+		- Port Scans
+	- __Access Attacks__ - The unauthorized manipulation of data, system access or user privileges
+		- Password Attacks - Brute-force, Trojan horse, Packet sniffers.
+		- Trust Exploitation
+		- Port Redirection 
+		- Man-in-the-Middle
+	- __Deniel of Service(DoS)__ -The disabling or corrupting of network, system or service
+		- Interrupt communication and cause significant loss of money and time
+		- __DDos__ - Originates from multiple sources
+
+## ___Attacks Mitigation___
+- ___Defense_in_Depth___
+	- __Used security devices__
+		- VPN 
+		- ASA Firewall - provides stateful firewall services
+		- IPS(Intrusion prevention system) - monitors incoming and outcoming traffic
+		- ESA/WSA(Email Security Appliance/ Web Security Appliance) -  filtre spams, known and suspicious internet sites
+		- AAA server - contains secure database, authenticate and authorize management access
+- ___Keep Backup__
+	- __Consideration__
+		- Frequency - Performing backups on a regular basis
+		- Validation - Always validate backups to ensure the integrity of data.
+		- Storage - Should be transported to an approved offsite storage on regular rotation
+		- Security - Should be protected by strong password
+- ___Upgrade,Update,Patch___
+- ___Authentication, Authorization, and Accounting(AAA)__
+	- Authentication - Who is permitted to access network
+	- Authorization - What actions they perform 
+	- Accounting - What was happening 
+- ___Firewall___
+	- __Types__
+		- Packet filtering - Prevent or allows access based on IP or MAC
+		- Application filtering - Prevent or allows access based on port num.
+		- URL filtering - Prevent or allows access based on specific URL or keyword
+		- Stateful packet inspection(SPI) 
+- ___Endpoint(Host) Security___
+	- Laptop, Computer, Mobile = Endpoint
+
+## ___Device Security___
+- ___Passwords__
+	- __Standards__
+		- 10 or more characters
+		- mix of uppercase,lowercase letters, symbols, numbers
+		- Change password often
+	- __Additional Security__
+		- Encrypting all plaintext passwords
+		- Setting a minimum acceptable password length
+		- Deterring brute-force password guessing attacks
+- ___Enable SSH(secure shell)___
+- ___Disable Unused Services___
+- 
