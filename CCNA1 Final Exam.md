@@ -19,47 +19,93 @@
 	- Peer-to-peer(P2P)
 10. .**What characteristic describes a virus?**
 	-  malicious software or code running on an end device
-11. **Three bank employees are using the corporate network. One use web, second have audio conference and the last using database to perform financial transaction. **what will be the priorities from highest to lowest** 
+11. **Three bank employees are using the corporate network. One use web, second have audio conference and the last using database to perform financial transaction. what will be the priorities from highest to lowest** 
 	-  audio conference, financial transactions, web page
 12.  **Refer to the exhibit. If Host1 were to transfer a file to the server, what layers of the TCP/IP model would be used?**
 	- application, transport, Internet, and network access layers
 13. **What service is provided by Internet Messenger?**
 	- An application that allows real-time chatting among remote users.
-14. 
-15. .
-16. .
-17. .
-18. .
-19. .
-20. .
-21. .
-22. .
-23. .
-24. .
-25. .
-26. .
-27. .
-28. .
-29. .
-30. ....
-31. .
-32. .
-33. .
-34. .
-35. .
-36. .
-37. .
-38. .
-39. .
-40. .
-41. .
-42. .
-43. .
-44. .
-45. .
-46. .
-47. .
-48. .
+14. **Refer to the exhibit. Which protocol was responsible for building the table that is shown?**
+	- ARP
+15. .**Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two.)**
+	- RFI​
+	- EMI
+16. .**The packet has a destination port number of 53. What service is the client requesting?**
+	- DNS
+17. **How is the PC able to keep track of the data flow between multiple application sessions and have each application receive the correct packet flows?**
+	- The data flow is being tracked based on the source port number that is used by each application.
+18. **What service is provided by SMTP?**
+	- Allows clients to send email to a mail server and the servers to send email to other servers.
+19. **What does the term “attenuation” mean in data communication?**
+	- loss of signal as distance increases
+20. **Which component is addressed in the AAA network service framework?**
+	 - **authorization**
+21. **What are two characteristics of IP? (Choose two.)**
+	- does not require a dedicated end-to-end connection
+	- operates independently of the network media
+22. **What three network characteristics are described in this scenario? (Choose three.)**
+	- security
+	- quality of service
+	- fault tolerance
+23. .**What are two common causes of signal degradation when using UTP cabling**
+	- improper termination
+	- low-quality cable or connectors
+24. .**What is the consequence of configuring a router with the _ipv6 unicast-routing_ global configuration command?​**
+	- The IPv6 enabled router interfaces begin sending ICMPv6 Router Advertisement messages.
+25. .If PC1 is sending a packet to PC2 and routing has been configured between the two routers, what will R1 do with the Ethernet frame header attached by PC1?
+	- remove the Ethernet header and configure a new Layer 2 header before sending it out S0/0/0
+26. .**What is an advantage for small organizations of adopting IMAP instead of POP?**
+	- Messages are kept in the mail servers until they are manually deleted from the email client.
+27. **What are two problems that can be caused by a large number of ARP request and reply messages? (Choose two.)**
+	- The ARP request is sent as a broadcast, and will flood the entire subnet.
+	- All ARP request messages must be processed by all nodes on the local network.
+28. **What mechanism is used by a router to prevent a received IPv4 packet from traveling endlessly on a network?**
+	- It decrements the value of the TTL field by 1 and if the result is 0, it discards the packet and sends a Time Exceeded message to the source host.
+29. **Which two functions are performed at the MAC sublayer of the OSI Data Link Layer to facilitate Ethernet communication? (Choose two.)**
+	- implements trailer with frame check sequence for error detection
+	- implements a process to delimit fields within an Ethernet 2 frame
+30. **An IPv6 enabled device sends a data packet with the destination address of FF02::2. What is the target of this packet?​**
+	- all IPv6 configured routers on the local link
+31. **What is the purpose of the TCP sliding window?**
+	- to request that a source decrease the rate at which it transmits data
+32. **What service is provided by BOOTP**
+	- Legacy application that enables a diskless workstation to discover its own IP address and find a BOOTP server on the network.
+33. .**What are two primary responsibilities of the Ethernet MAC sublayer? (Choose two.)**
+	- accessing the media
+	- data encapsulation
+34. **What is the subnet ID associated with the IPv6 address 2001:DA48:FC5:A4:3D1B::1/64?**
+	- 2001:DA48:FC5:A4::/64​
+35. **What characteristic describes an IPS?**
+	- a network device that filters access and traffic coming into a network
+36. **A client is using SLAAC to obtain an IPv6 address for its interface. After an address has been generated and applied to the interface, what must the client do before it can begin to use this IPv6 address?**
+	- It must send an ICMPv6 Neighbor Solicitation message to ensure that the address is not already in use on the network.
+37. **What is a benefit of using cloud computing in networking?**
+	- Network capabilities are extended without requiring investment in new infrastructure, personnel, or software.
+38. **What are three characteristics of the CSMA/CD process? (Choose three.)**
+	- A device listens and waits until the media is not busy before transmitting.
+	- After detecting a collision, hosts can attempt to resume transmission after a random time delay has expired.
+	- All of the devices on a segment see data that passes on the network medium.
+39. **Why would a Layer 2 switch need an IP address?**
+	- to enable the switch to be managed remotely
+40. **What is an advantage to using a protocol that is defined by an open standard?**
+	- It encourages competition and promotes choices.
+41. **What is the function of the shell in an OS?**
+	- It interfaces between the users and the kernel
+42. **Which connection provides a secure CLI session with encryption to a Cisco switch?**
+	- an SSH connection
+43. **What is the purpose of using these keystrokes? Ctrl-Shift-6 key**
+	- to interrupt the ping process
+44. **What are two benefits of using a layered network model? (Choose two.)**
+	- It assists in protocol design.
+	- It prevents technology in one layer from affecting other layers.
+45. **In which layer of the OSI model is the error categorized?**
+	- physical layer
+46. **Which type of UTP cable is used to connect a PC to a switch port?**
+	- straight-through
+47. **What is a characteristic of UTP cabling?**
+	- cancellation
+48. **Which topology provides high availability and connects some, but not all, remote sites?(WAN)**
+	- partial mesh
 49. .
 50. .
 51. .
@@ -132,37 +178,3 @@
 118. .
 119. .
 120. .
-121. .
-122. .
-123. .
-124. .
-125. .
-126. .
-127. .
-128. .
-129. .
-130. .
-131. .
-132. .
-133. .
-134. .
-135. .
-136. .
-137. .
-138. .
-139. .
-140. .
-141. .
-142. .
-143. .
-144. .
-145. .
-146. .
-147. .
-148. .
-149. .
-150. .
-151. .
-152. .
-153. .
-154. .
