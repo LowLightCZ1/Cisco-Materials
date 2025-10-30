@@ -112,7 +112,7 @@ Vlan99                 [down/down]
 - You can manually configure ports on switch with specific duplex and speed
 _Port configuration_
 ```
-S1(config)# interface FastEthernet 0/1
+S1(config)# interface FastEthernet0/1
 S1(config-if) duplex full
 S1(config-if) speed 100
 S1(config-if) end
@@ -135,5 +135,109 @@ show history
 show ip(v6) interface 
 show mac-address-table(mac address-table) 
 ```
+
+## ___Verify Switch Port Configuration___
+``show rinning-config`` - Verify that switch has been correctly configured
+``show interface`` - Display status and statistics information on the network interfaces
+
+# ___Secure Remote Access___
+
+## ___Remote Operation___
+- __Telnet__ 
+	- Port: 23
+	- Unsecure older protocol
+- __SSH (Secure Shell)__
+	- Port: 22
+	- Secure better protocol
+
+## ___Configure SSH___
+```
+S1# show ip ssh
+- Verify that switch support SSH
+
+S1(config)# ip domain-name ####
+S1(config)# crypto key generate rsa
+How many bits in the modulus [512]: 1024
+S1(config)# username admin secret ccna
+S1(config)# line vty 0 15 
+S1(config-line)# transport input ssh 
+S1(config-line)# login local 
+S1(config-line)# exit
+S1(config)# ip ssh version 2
+```
+
+# ___Basic Router Configuration___
+```
+Router# configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)# hostname R1
+R1(config)# enable secret class
+R1(config)# line console 0
+R1(config-line)# password cisco
+R1(config-line)# login
+R1(config-line)# exit
+R1(config)# line vty 0 4
+R1(config-line)# password cisco
+R1(config-line)# login
+R1(config-line)# exit
+R1(config)# service password-encryption
+R1(config)#
+```
+
+## ___Dual Stack Topology___
+- Type of interfaces supported by each.
+
+## ___Router Interfaces___
+ - Supports LANs and WANs
+ - Interconnect different types of networks 
+ - __G2 ISR__
+	 - One or two integrated Gigabit Ethernet interfaces 
+	 - __HWIC__ - Height-Speed WAN Interface Card slots
+ - To be enable, an interface must be:
+	 - Configured with at least one IP address 
+	 - Activated - By default = shutdown, also must be connected to other device
+	 - Description 
+
+```
+R1(config)# interface gigabiteternet 0/0/0
+R1(config-if)# ip address #### ####
+R1(config-if)# ipv6 address ####/##
+R1(config-if)# description Link to LAN 1
+R1(config-if)# no shutdown
+R1(config-if)# exit 
+R1(config)# interface gigabiteternet 0/0/1
+R1(config-if)# ip address #### ####
+R1(config-if)# ipv6 address ####/##
+R1(config-if)# description Link to LAN 2
+R1(config-if)# no shutdown
+R1(config-if)# exit
+R1(config)# interface serial 0/0/0
+R1(config-if)# ip address #### ####
+R1(config-if)# ipv6 address ####/##
+R1(config-if)# description Link to R2
+R1(config-if)# no shutdown
+R1(config-if)# exit
+```
+
+## ___Loopback interfaces___
+- Logical interface that is internal to the router.
+- Useful for testing and managing a Cisco IOS device
+``Router(config)# interface loopback number``
+``Router(config-if)# ip address ip-address subnet-mask``
+
+# ___Verify Directly Connected Networks___
+- __Commands__
+	``show ip(v6) interface brief`` - Display a summary for all interfaces
+	``show running-config interface "interface-id"`` - Displays the commands applied to the specified interface
+	``show ip(v6) route`` - Display routing table
+- Pipe __|__
+	- __section__
+	``show running config | section "line vty"``
+	- __include__
+	``show ip interface brief | inclide "up"`` - Includes all output lines that match the filtering expression
+	- __exclude__
+	``show ip inteface brief | exclude "unassigned"
+	- __begin__
+	``show ip route | begin "Gateway"``
 
 
